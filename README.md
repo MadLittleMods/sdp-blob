@@ -52,6 +52,8 @@ There is also a standalone build that can be directly used in a browser. `sdp-bl
 
 You can pass in just a sdp description string or an options object that has a `description` and `encoding` keys.
 
+Using `utf16` encoding instead of `base64` will result in a much more reduced blob(~50% more) but produces some odd characters.
+
  - `description`: SDP string
  - `encoding`: *Optional* `base64`(default) or `utf16`
 
