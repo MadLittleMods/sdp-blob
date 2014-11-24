@@ -55,13 +55,13 @@ Pass in the blob and type or an options object that has a `blob` and `type` keys
 
 These tables try to show you how `SDPBlob` compares to other methods for a given offer SDP description.
 
-Browser | **`SDPBlob.assembleBlob(...)`** | `DataBlob.assembleBlob(...)` | `JSON.stringify(description)` | **% reduced**
-:------ | ------------------------------- | ---------------------------- | ----------------------------- | ------------:
-Chrome 41.0.2229.1 | 552 | 594 | 836 | 33.97% reduced
-Chrome 39.0.2171.65 | 548 | 594 | 836 | 34.45% reduced
-Chrome 38.0.2125.122 | 552 | 594 | 2042 | 72.97% reduced
-Firefox 35.0a2 | 788 | 1094 | 1041 | 24.30% reduced
-Firefox 33.1.1 | 576 | 647 | 733 |  21.42% reduced
+Browser | **% reduced** | **`SDPBlob.assembleBlob(...)`** | `DataBlob.assembleBlob(...)` | `JSON.stringify(description)` 
+:------ | ------------- | ------------------------------- | ---------------------------- | ----------------------------:
+Chrome 41.0.2229.1 | 33.97% reduced | 552 | 594 | 836 
+Chrome 39.0.2171.65 | 34.45% reduced | 548 | 594 | 836 
+Chrome 38.0.2125.122 | 72.97% reduced | 552 | 594 | 2042 
+Firefox 35.0a2 | 24.30% reduced | 788 | 1094 | 1041 
+Firefox 33.1.1 | 21.42% reduced | 576 | 647 | 733 
 
 
 # How the blob is made:
