@@ -1,15 +1,20 @@
 # sdp-blob
 
-Turn a WebRTC Offer/Answer into a compact blob/token
+Turn a WebRTC Offer/Answer into a compact blob/token.
+
+Only works with datachannel's.
 
 
-# 83% reduction
+# 37.42% reduction *(average)*
 
 The goal of this library is to reduce the number of characters that represent enough data in the offer/answer to establish a WebRTC datachannel.
 
-The reason I made this library is because I wanted a server-less WebRTC experience. This means you still need to transfer the offer to a friend and have the friend send the answer back but in as little characters as possible bringing it down to almost a small token.
+The reason I made this library is because I wanted a server-less WebRTC experience. This means you still need to transfer the offer/blob to a friend and have the friend send back the answer, but in as little characters as possible bringing it down to almost a small token.
 
-To expand on that I did not want to have to deal with a signaling server. Yes, the means of which you transfer the offer/answer back and forth which will probably by an IM client or email do replace the signaling server. Yes, it is more work on the user.
+To expand on that, I did not want to have to deal with a signaling server. Yes, the signaling server(*means of which you transfer the offer/answer back and forth*) is replaced by an IM client or email. Yes, it is more work on the user.
+
+This library was developed when Chrome 38 was the latest version where you could see a 72% reduction by using SDP-Blob. At the moment it only reduces 30% for latest versions of Chrome and Firefox. *(see table below)*
+
 
 # Usage:
 
