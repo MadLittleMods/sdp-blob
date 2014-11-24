@@ -19,6 +19,14 @@ This library was developed when Chrome 38 was the latest version where you could
 
 ---
 
+## Example blob:
+
+Here is an example offer blob created by [`SDPBlob.assembleBlob(description)`](#sdpblobassembleblobdescription-or-options). It can sent to someone else and parsed by [`SDPBlob.parseBlob(blob, type)`](#sdpblobparsebloboptions-or-blob-type)
+
+```
+N4IgDghgngNg9hAJgZxALgKwAYcBoQCWY6IAjAJwBMAdKQGwActtWlI+YcATgC7p1Y6GcvgIBjAKYAFAO6ISAIQgBJLgAsA8gFUAZgC8CANQD0esACkA6noAqYLgC1lMBe0KTdXCAHMS3gOIA0gQAVgAyYGAhyKQAtoGUPMZuOgQAdt4SXPbpfGggGGoYlhAAwlgyWCFqAMQAmgSkABoAcgBuyABKsVoYdOalNjY6GADWbXB1WG3KGGKBTeRSbmIQaYgEiBA8EqhoANqgYnCxnGkSaXmk+DxeacicvCQArojEHFwE3AQ8UOjXhGI+QoNHoTFILDYHG4eQEQhEIF+YAkJDUcGQfHwmXOXh4XzS6CwAF9cEcTmcLlcbncHjCXm83Dlvr90JRRECyFRaIxmJQcIy6Wg4QIblBkaj0ZiQNistt8YSSWTTnBzpd/tS1rSnvkeGJ3uBPsy/mgAMzskgg7ngyEC7VYUXi/JojEgRUgY7K1VUxE0x55RF6xmGz4stAAFnNwK5YN5/OhdodKKdktdAF0iUAAA
+```
+
 # Usage:
 
 ### CommonJS:
@@ -37,6 +45,8 @@ There is also a standalone build that can be directly used in a browser. `sdp-bl
 // `SDPBlob` is a global to use now
 </script>
 ```
+
+# API
 
 ## `SDPBlob.assembleBlob(description or options)`
 
