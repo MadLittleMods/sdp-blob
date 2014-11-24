@@ -15,6 +15,9 @@ To expand on that, I did not want to have to deal with a signaling server. Yes, 
 
 This library was developed when Chrome 38 was the latest version where you could see a 72% reduction by using SDP-Blob. At the moment it only reduces 30% for latest versions of Chrome and Firefox. *(see table below)*
 
+# Version: 1.0.0
+
+---
 
 # Usage:
 

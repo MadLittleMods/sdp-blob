@@ -2,7 +2,19 @@ var gulp = require('gulp');
 
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
+var header = require('gulp-header');
 var browserify = require('gulp-browserify');
+
+var pkg = require('./package.json');
+var banner = [
+	'/**',
+	' * <%= pkg.name %> - <%= pkg.description %>',
+	' * @version v<%= pkg.version %>',
+	' * @link <%= pkg.homepage %>',
+	' */',
+	''
+].join('\n');
+
 
 // Build a browser compatible build of SDPBlob
 gulp.task('build-standalone', function() {
@@ -12,7 +24,8 @@ gulp.task('build-standalone', function() {
 		.pipe(browserify({
 			standalone: 'SDPBlob'
 		}))
-		//.pipe(uglify())
+		.pipe(uglify())
+		.pipe(header(banner, { pkg : pkg }))
 		.pipe(rename(function (path) {
 			path.basename = "sdp-blob-standalone";
 		}))
