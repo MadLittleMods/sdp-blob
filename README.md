@@ -56,7 +56,7 @@ Pass in the blob and type or an options object that has a `blob` and `type` keys
 These tables try to show you how `SDPBlob` compares to other methods for a given offer SDP description.
 
 Browser | **% reduced** | **`SDPBlob.assembleBlob(...)`** | `DataBlob.assembleBlob(...)` | `JSON.stringify(description)` 
-:------ | ------------- | ------------------------------- | ---------------------------- | ----------------------------:
+------- | ------------- | ------------------------------- | ---------------------------- | -----------------------------
 Chrome 41.0.2229.1 | 33.97% reduced | 552 | 594 | 836 
 Chrome 39.0.2171.65 | 34.45% reduced | 548 | 594 | 836 
 Chrome 38.0.2125.122 | 72.97% reduced | 552 | 594 | 2042 
