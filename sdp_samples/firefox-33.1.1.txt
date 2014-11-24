@@ -1,0 +1,15 @@
+v=0
+o=Mozilla-SIPUA-33.1.1 7678 0 IN IP4 0.0.0.0
+s=SIP Call
+t=0 0
+a=ice-ufrag:651c68d3
+a=ice-pwd:959ca97608a9cb541fb484c624b250b1
+a=fingerprint:sha-256 E7:A2:2B:7C:DA:42:CA:E4:55:2E:3F:23:22:72:AC:62:DF:0E:45:21:DE:A1:AE:AC:EE:BB:20:E9:F7:CC:A5:78
+m=application 60953 DTLS/SCTP 5000
+c=IN IP4 75.73.159.26
+a=sctpmap:5000 webrtc-datachannel 16
+a=setup:actpass
+a=candidate:0 1 UDP 2128609535 192.168.1.200 60953 typ host
+a=candidate:1 1 UDP 1692467199 11.11.111.11 60953 typ srflx raddr 192.168.1.200 rport 60953
+a=candidate:2 1 UDP 2128543999 192.168.1.102 60954 typ host
+a=candidate:3 1 UDP 1692401663 11.11.111.11 60954 typ srflx raddr 192.168.1.102 rport 60954

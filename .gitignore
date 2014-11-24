@@ -1,0 +1,4 @@
+# Ignore what we can get back from a simple `npm install`
+node_modules/
+# Ignore debug output from failed npm stuff
+npm-debug.log
