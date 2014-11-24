@@ -83,7 +83,7 @@ Firefox 33.1.1 | 21.42% reduced | 576 | 647 | 733
 
  - No need for audio media description. Chrome 38 seems to add it in when trying to create a data channel so we strip it out and regenerate a fake one on the client from the blob. This problem seems to be gone in Chrome Canary(40) so hopefully this part can get removed entirely.
  - Shorten all blob content keys before `JSON.stringify`. We restore the full key names on the client later on.
- - Compress with LZString using the Base64 encoding for easy copy/paste-able characters.
+ - Compress with [lz-string](http://pieroxy.net/blog/pages/lz-string/index.html) using the Base64 encoding for easy copy/paste-able characters.
  - Session ID does not matter so we just set it to a multi-digit random number
  - Reduce candidate priority number to single digit
  - Delete the candidate foundation and recreate it with a multi-digit random number
