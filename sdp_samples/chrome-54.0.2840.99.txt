@@ -1,0 +1,15 @@
+v=0
+o=- 4056161155114267321 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=msid-semantic: WMS
+m=application 51927 DTLS/SCTP 5000
+c=IN IP4 192.168.1.102
+a=candidate:430735571 1 udp 2113937151 192.168.1.102 51927 typ host generation 0 network-cost 50
+a=candidate:2992124134 1 udp 2113939711 8703:454:8300:1111:b1b0:92b6:8bb4:e57 51928 typ host generation 0 network-cost 50
+a=ice-ufrag:8lv9
+a=ice-pwd:t82VD/XWxk+HDO5wGNGcRuGN
+a=fingerprint:sha-256 25:F4:D4:41:B8:66:8D:D9:72:15:58:ED:2D:CB:27:24:9B:03:E4:76:01:9F:39:77:12:B0:B0:22:AA:C2:71:F1
+a=setup:actpass
+a=mid:data
+a=sctpmap:5000 webrtc-datachannel 1024
